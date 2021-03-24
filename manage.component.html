@@ -1,0 +1,66 @@
+<div  *ngIf="!errorflag" >{{errorMessage}}</div>
+<html *ngIf="errorflag">
+
+<head>
+    <style> </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+
+<body>
+         <!--Modal Heading --> 
+           <div class="container">
+            <div class="header" style="margin-bottom: 5px;">
+                    <h6 class="title" >Change Settings for Call Recordings</h6>      
+            </div> 
+
+                 <hr>
+            
+
+                <form style="margin-top: 20px;" (ngSubmit)="UserDetails()">
+
+                <!-- Modal Body -->
+                <div class="form-body">
+                        
+                    <!-- Role Dropdown -->
+                    <label >Record Management Access <ng-template #popContent  >
+                        <div style="color: white; font-size: 83.33%pt; font-weight: 200;">
+                        
+                        <p >•	None: the user cannot manage recordings (even their own).</p>
+
+                        <p> •  Own/Group Recordings: the user can manage their own recordings and recordings of any groups for which the user is a manager.</p>
+
+                        <p>•	All Recordings: the user can manage recordings for all users of the system.</p>
+                    </div>
+                        </ng-template>
+                        
+                         <img src="./assets/infocircle.png" height="22" width="22" placement="bottom-right" data-conatiner="body" [ngbPopover]="popContent" popoverClass="my-custom-class"> 
+                    </label>
+
+                    <div class="form-group">
+                        <select  class="form-control" [(ngModel)]="role" [ngModelOptions]="{standalone: true}" id="exampleFormControlSelect1" style="list-style:none" (change)="GetRoleValue($event)">
+                            
+                                <option [ngValue]="role" *ngFor="let role of roles">{{role}}</option>
+                        </select>
+                        
+                    </div>
+
+
+                </div>
+                <hr style="margin-top: 30px;">
+
+                       <div class="form-footer" style="float: right;">
+                    <button type="button"  id="closeButton" class="btn btn-secondary" (click)="OnClose()" >Cancel</button>
+                    <button style="font-size: 80%;"id="saveCss" type="submit"[disabled]="saveflag" class="btn btn-primary" > Save</button>
+                </div>
+                </form>
+        </div>
+
+        
+    
+
+</body>
+</html>

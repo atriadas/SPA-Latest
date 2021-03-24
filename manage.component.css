@@ -1,0 +1,32 @@
+#exampleFormControlSelect1{
+    /*background-image: linear-gradient(to right,rgb(241, 235, 235),rgb(255, 255, 255),rgb(241, 235, 235));*/
+    border-radius:2pt ;
+    background-color: whitesmoke;
+}
+.popover-body{
+    background-color:rgb(43, 41, 41); 
+}
+.my-custom-class{
+    margin-left: 10%;
+    width: 80%;
+}
+.my-custom-class .arrow{
+    margin-left: 23%;
+}
+#saveCss{
+    padding: 5px 12px;
+}
+#saveCss:disabled{
+    background-color: gray;
+    border-color: darkgray;
+        padding: 5px 12px;
+}
+#closeButton{
+    margin-right:5px;
+    font-size: 80%;
+    /* background:linear-gradient(to bottom,white,rgb(224, 224, 225)); */
+    background-color: whitesmoke;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px 10px;
+    color: black;
+}

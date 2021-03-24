@@ -1,0 +1,264 @@
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    color:black !important;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid rgb(42, 119, 184)!important;
+    font-size: 9pt;
+    text-align: left;
+    padding: 8px 0px 0px 0px; 
+}
+
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active .badge{
+    padding: 5px 9px;
+    border-radius: 20%;
+    background-color:rgb(42, 119, 184)!important;
+    color: white!important;
+}
+
+a#nav-profile-tab{
+    color:lightgrey;
+    padding: 8px 2px 8px 2px;
+    font-size: 9pt;
+}
+
+a#nav-home-tab{
+    color: lightgrey;
+    padding: 8px 2px 8px 2px;
+    font-size: 9pt;
+}
+
+#newGroup {   
+    text-align: center;
+    padding-top: 40%;
+}
+
+#grpbtn{
+    height:0.4in;
+    border: 1px solid lightgrey;
+    font: rgb(22, 22, 22);
+}
+
+.nav-fill .nav-item{
+    text-align: left;
+    display: inline-block !important;
+}
+
+#noNames{
+    position: relative;
+    text-align: center;
+    height: 3.68in;
+}
+
+#noNames #smaltex{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: 0;
+    transform: translate(-50%,-50%);
+}
+
+#noNames #bigtex{
+    top: 42%;
+    left: 50%;
+    position: absolute;
+    margin: 0;
+    transform: translate(-50%,-50%);
+}
+
+.badge {         
+    padding: 5px 9px;
+    border-radius: 20%;
+    background-color: lightgray;
+    color:black;  
+  }
+ 
+#nav-profile-tab{
+    flex-basis: unset;
+    flex-grow: unset;
+    flex-shrink: unset;
+}
+
+#nav-home-tab{
+    flex-basis: unset;
+    flex-grow: unset;
+    flex-shrink: unset;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, 
+  th {   
+    text-align: left;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #eeeded;
+  }
+  
+  #exampleModal{
+      margin-top: 3.3in;
+      border-radius: 30%;
+  }
+
+#alertBox{
+    color: rgb(66, 201, 111);
+    background-color: rgb(208, 252, 208);
+    border: 1px solid rgb(66, 201, 111);
+}
+
+#failalertBox{
+    color:red;
+    background-color: rgb(252, 207, 207);
+    border: 1px solid red;   
+}
+
+.MainModal{
+    margin-top: 28px;
+}
+
+#leftList{
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding: 8px;
+    background-color: white;
+    /* word-wrap:break-word; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;  
+}
+
+#leftList:focus{
+    color: rgb(0, 89, 255);
+    background-color: rgb(229, 242, 245);
+    outline: none;
+        /* word-wrap:break-word; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#groupNameInput:invalid{
+ color: red;
+}
+
+#myInput{
+    background: url("../../assets/searchicon.jpeg") no-repeat right;
+ }
+
+ #myInput1{
+    background: url("../../assets/searchicon.jpeg") no-repeat right;
+ }
+
+ #myInput2{
+    background: url("../../assets/searchicon.jpeg") no-repeat right;  
+ }
+
+/* DELETE AND LEFT ADD */
+
+#leftaddstyle{
+    padding: 1.5% 5% ;
+    background:linear-gradient(to bottom,white,rgb(224, 224, 225));
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    font-size: 10pt;
+    font-weight: 400;
+}
+
+#deletestyle{
+    padding:1.5% ;
+    background:linear-gradient(to bottom,white,rgb(224, 224, 225));
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    font-size: 80%;
+    font-weight: 400;
+}
+
+#cancelstyle{
+    padding:1% ;
+    background:linear-gradient(to bottom,white,rgb(224, 224, 225));
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    font-size: 70%;
+    font-weight: 400;
+}
+
+#savestyle{
+    font-size: 75%;
+     width: 40%;
+      padding:4%;
+}
+
+#savestyle:disabled{
+    font-size: 75%;
+     width: 40%;
+      padding:4%;
+    background-color: grey;
+    border-color: darkgrey;
+}
+
+
+/* RIGHT ADD */
+
+#rightaddstyle{
+    padding:5px;
+    background:linear-gradient(to bottom,white,rgb(224, 224, 225));
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    font-size: 100%;
+    font-weight: 400;
+    width: 9%;
+}
+#rightaddstyle1:disabled {
+    padding:4.3px 0px;
+    background: linear-gradient(to bottom, white, rgb(224, 224, 225));
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    font-weight: 400;
+    width: 80%;
+    font-size: 72%;
+    color:black;
+}
+
+#rightaddstyle1:enabled {
+    padding:4.3px 0px;
+    background: blue;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 190, 190);
+    font-weight: 400;
+    width: 80%;
+    font-size: 72%;
+    color: white;
+
+}
+
+.select2-results{
+    font-size: 20% !important;
+}
+.ng-select{
+    width:90%;
+    float: left;
+}
+
+.pageAnchor{
+    cursor: pointer;
+}
